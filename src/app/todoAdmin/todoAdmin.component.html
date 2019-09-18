@@ -1,0 +1,16 @@
+
+<div class="row mt-3">
+    <input type="text" placeholder="enter course" #course (keyup.enter)="addCourse(course)">
+</div>
+
+<div class="row mt-3">
+    <div>Couses : </div>
+    <div>
+        <ul>
+            <li *ngFor='let course of courses'>
+                {{course}}
+            </li>
+        </ul>
+    </div>
+
+</div>
